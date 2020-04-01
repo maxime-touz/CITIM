@@ -6,29 +6,8 @@ body {
     line-height: 2em;
 }
 
-.container {
-    width: 90%;
-    max-width: 840px;
-    margin: 0 auto;
-}
 
-.main {
-    padding: 1em;
-}
-
-img {
-    width: 100%;
-}
-
-.icon {
-    max-width: 150px;
-    transition: transform .5s;
-    transform: scale(1);
-}
-
-.logo {
-    max-width: 200px;
-}
+/* TYPOGRAPHIE */
 
 h1 {
     display: inline-block;
@@ -45,14 +24,9 @@ h2 {
     margin: 1em 0;
 }
 
-span {
-    display: inline-block;
-    position: relative;
-}
-
 h2 span:before {
     content: "";
-    width: 90%;
+    width: 100%;
     height: 0.5rem;
     background: #cedc29;
     position: absolute;
@@ -73,14 +47,49 @@ a:focus {
     color: #cedc29;
 }
 
-.icon:hover {
-    transition: transform .5s;
-    transform: scale(1.2);
+span {
+    display: inline-block;
+    position: relative;
 }
 
 .span-mini {
     font-size: 0.6rem;
     padding: 0 7%;
+}
+
+
+/* IMAGES */
+
+img {
+    width: 100%;
+}
+
+.icon {
+    max-width: 150px;
+    transition: transform .5s;
+    transform: scale(1);
+}
+
+.icon:hover {
+    transition: transform .5s;
+    transform: scale(1.2);
+}
+
+.logo {
+    max-width: 200px;
+}
+
+
+/* LAYOUTS */
+
+.container {
+    width: 90%;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.main {
+    padding: 1em;
 }
 
 .columns {
@@ -178,9 +187,6 @@ a:focus {
 
 .col-footer2 {
     border-top: solid 0.5em #cedc29;
-    -ms-transform: skew(-10deg, 0deg);
-    -webkit-transform: skew(-10deg, 0deg);
-    transform: skew(-10deg, 0deg);
     width: 50%;
     text-align: right;
 }
